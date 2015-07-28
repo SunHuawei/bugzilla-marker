@@ -1,0 +1,16 @@
+{
+    "name": "Buggzilla Marker",
+    "version": "2.0",
+    "content_scripts": [{
+        "matches": ["http://bugzilla2/*", "http://bugzilla2.beijing.objectiva.local/*"],
+        "css": ["jquery-ui.css", "style.css"],
+        "js": ["jquery.js", "jquery-ui.js", "script.js"]
+    }],
+    "permissions": ["storage"],
+    "browser_action": {},
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_page": "options.html",
+    "manifest_version": 2
+}

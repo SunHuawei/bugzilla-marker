@@ -1,0 +1,39 @@
+<html>    
+    <head>
+        <title>
+            Buggzilla Marker
+        </title>
+		<link rel="stylesheet" type="text/css" href="farbtastic.css"/>
+		
+		<style type="text/css" media="screen">
+			.colorwell { border: 2px solid #fff; width: 6em; text-align: center; cursor: pointer;}
+			body .colorwell-selected { border: 2px solid #000; font-weight: bold;}
+		</style>
+    </head>    
+    <body>
+		<table id="menuOptionList">
+			<tr>
+				<th>id</th>
+				<th>op</th>
+				<th>name</th>
+				<th>background color</th>
+				<th>font color</th>
+				<th>drag & drop</th>
+			</tr>
+		</table>
+        <br>
+        <div id="status">
+        </div>
+        <button id="save">
+            Save
+        </button>
+        <button id="addRow">
+            + Add Row
+        </button>
+		<div id="picker" style="float: right;"></div>
+    </body>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+	<script src="farbtastic.js"></script>
+    <script src="options.js"></script>
+</html>
